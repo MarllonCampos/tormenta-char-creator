@@ -5,22 +5,41 @@
 
 # Classe de Raças
 - [x] Aggelus
-- [] Anao
-- [] Dahllan
-- [] Elfo
-- [] Goblin
-- [] Golem
-- [] Humano
-- [] Hynne
-- [] Kliren
-- [] Lefou
+- [x] Anao
+- [x] Dahllan
+- [x] Elfo
+- [x] Goblin
+- [x] Golem
+- [x] Humano
+- [x] Hynne
+- [x] Kliren
+- [x] Lefou
 - [x] Medusa
-- [] Minotauro
-- [] Osteon
-- [] Qareen
-- [] SereiaTritao
-- [] Silfide
-- [] Sulfure
-- [] Trog
+- [x] Minotauro
+- [x] Osteon
+- [x] Qareen
+- [x] SereiaTritao
+- [x] Silfide
+- [x] Sulfure
+- [x] Trog
+
+# Habilidade de Raças
+
+
+# Classe de Classes 
+- [] Arcanista
+- [] Bardo
+- [] Bucaneiro
+- [] Barbaro
+- [] Cacador
+- [] Cavaleiro
+- [] Clerigo
+- [] Druida
+- [] Guerreiro
+- [] Inventor
+- [] Ladino
+- [] Lutador
+- [] Nobre
+- [] Paladino
 
 
