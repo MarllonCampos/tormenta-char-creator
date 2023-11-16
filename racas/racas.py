@@ -2,11 +2,12 @@ import inquirer
 # import json
 import re
 from racas import nome_racas
+from utils import cls
 
 
 class Racas():
     def __init__(self):
-        # print(nome_racas.NomeRacas.race_class("aggelus").size)
+        cls()
         self.race_name = ""
         self.values_from_race = {}
         self.__races = [
