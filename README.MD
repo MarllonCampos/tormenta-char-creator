@@ -28,19 +28,20 @@
 
 
 # Classe de Classes 
-- [] Arcanista
-- [] Bardo
-- [] Bucaneiro
-- [] Barbaro
-- [] Cacador
-- [] Cavaleiro
-- [] Clerigo
-- [] Druida
-- [] Guerreiro
-- [] Inventor
-- [] Ladino
-- [] Lutador
-- [] Nobre
-- [] Paladino
-
-
+- [ ] Arcanista
+- [ ] Bardo
+- [ ] Bucaneiro
+- [ ] Barbaro
+- [ ] Cacador
+- [ ] Cavaleiro
+- [ ] Clerigo
+- [ ] Druida
+- [ ] Guerreiro
+- [ ] Inventor
+- [ ] Ladino
+- [ ] Lutador
+- [ ] Nobre
+- [ ] Paladino
+ 
+ 
+ 
