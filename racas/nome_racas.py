@@ -45,54 +45,54 @@ class NomeRacas(Enum):
             case cls.aggelus.name:
                 return aggelusClass.Aggelus()
             case cls.anao.name:
-                return "anao"
+                return anaoClass.Anao()
             case cls.dahllan.name:
-                return "dahllan"
+                return dahllanClass.Dahllan()
 
             case cls.elfo.name:
-                return "elfo"
+                return elfoClass.Elfo()
 
             case cls.goblin.name:
-                return "goblin"
+                return goblinClass.Goblin()
 
             case cls.golem.name:
-                return "golem"
+                return golemClass.Golem()
 
             case cls.humano.name:
-                return "humano"
+                return humanoClass.Humano()
 
             case cls.hynne.name:
-                return "hynne"
+                return hynneClass.Hynne()
 
             case cls.kliren.name:
-                return "kliren"
+                return klirenClass.Kliren()
 
             case cls.lefou.name:
-                return "lefou"
+                return lefouClass.Lefou()
 
             case cls.medusa.name:
-                return "medusa"
+                return medusaClass.Medusa()
 
             case cls.minotauro.name:
-                return "minotauro"
+                return minotauroClass.Minotauro()
 
             case cls.osteon.name:
-                return "osteon"
+                return osteonClass.Osteon()
 
             case cls.qareen.name:
-                return "qareen"
+                return qareenClass.Qareen()
 
             case cls.sereiatritao.name:
-                return "sereiatritao"
+                return sereiatritaoClass.SereiaTritao()
 
             case cls.silfide.name:
-                return "silfide"
+                return silfideClass.Silfide()
 
             case cls.sulfure.name:
-                return "sulfure"
+                return sulfureClass.Sulfure()
 
             case cls.trog.name:
-                return "trog"
+                return trogClass.Trog()
 
             case _:
                 print(f"NOT FOUND ERROR FOCKER,  {name}")
