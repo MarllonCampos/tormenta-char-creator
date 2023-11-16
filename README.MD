@@ -1,6 +1,7 @@
-- [] Adicionar a versão do python utilizada
-- [] Criar um README decente
-- [] Criar as interfaces utilizando alguma biblioteca legal (MUITO MAIS PRA FRENTE)
+- [ ] Adicionar a versão do python utilizada
+- [ ] Criar um README decente
+- [ ] Criar as interfaces utilizando alguma biblioteca legal (MUITO MAIS PRA FRENTE)
+
 
 
 # Classe de Raças
