@@ -1,19 +1,32 @@
 import inquirer
 from inquirer import errors
-DEFAULT_ATTRIBUTE_CHOICES = ['Força',
-                             'Destreza',
-                             'Constituição',
-                             'Inteligência',
-                             'Sabedoria',
-                             'Carisma']
-DEFAULT_POINTS = {
-    "-2": 2,
-    "-1": 1,
-    "0": 0,
-    "1": -1,
+from inquirer.themes import BlueComposure
+from utils import cls
+
+DEFAULT_ATTRIBUTE_CHOICES = [('Força', "FOR"),
+                             ('Destreza', "DES"),
+                             ('Constituição', "CON"),
+                             ('Inteligência', "INT"),
+                             ('Sabedoria', "SAB"),
+                             ('Carisma', "CAR")]
+DEFAULT_POINTS = [
+    ("-2", 2),
+    ("-1", 1),
+    ("0", 0),
+    ("1", -1),
+    ("2", -2),
+    ("3", -4),
+    ("4", -7)
+]
+
+DEFAULT_MODIFIER_POINTS = {
     "2": -2,
-    "3": -4,
-    "4": -7
+    "1": -1,
+    "0": 0,
+    "-1": 1,
+    "-2": 2,
+    "-4": 3,
+    "-7": 4
 }
 
 
@@ -21,10 +34,7 @@ DEFAULT_TOTAL_POINTS = 10
 
 
 class Atributos():
-    def __init__(self,
-                 choices: list[str] = DEFAULT_ATTRIBUTE_CHOICES,
-                 points: dict[str:int] = DEFAULT_POINTS,
-                 totalPoints: int = DEFAULT_TOTAL_POINTS):
+    def __init__(self):
         self.attributes = {
             "FOR": 0,
             "DES": 0,
@@ -33,9 +43,9 @@ class Atributos():
             "SAB": 0,
             "CAR": 0,
         }
-        self._choices = choices.copy()
-        self._points = points
-        self._total_points = totalPoints
+        self._choices = DEFAULT_ATTRIBUTE_CHOICES.copy()
+        self._points = DEFAULT_POINTS.copy()
+        self._total_points = DEFAULT_TOTAL_POINTS
         self.__selected_attribute = ""
         self.assign_points()
 
@@ -65,15 +75,19 @@ class Atributos():
 
     def assign_points(self):
         while self.total_points > 0 and self.choices:
+            cls()
+            print(f"Atributos ja atribuidos {self.attributes}")
             self.__ask_for_attribute()
             self.__assign_points_to_an_attribute()
 
-    def correct_name_attribute(self, value: str):
-        return value.upper()[0:3]
-
     def change_attribute(self, attribute: str, mod: int):
-        formatted_attribute = self.correct_name_attribute(attribute)
+        formatted_attribute = attribute
         self.attributes[formatted_attribute] += mod
+
+    def __remove_attribute_from_choice(self, attribute: str):
+        for index, choice in enumerate(self.choices):
+            if choice[1] == attribute:
+                self.choices.remove(self.choices[index])
 
     def __ask_for_attribute(self):
         questions = [
@@ -83,38 +97,36 @@ class Atributos():
                           carousel=True
                           ),
         ]
-        answer = inquirer.prompt(questions)
+        answer = inquirer.prompt(questions, theme=BlueComposure())
         attribute = answer['atributo']
-        formatted_attribute = self.correct_name_attribute(attribute)
-        self.__selected_attribute = formatted_attribute
-        self.choices.remove(attribute)
+        self.__selected_attribute = attribute
+        self.__remove_attribute_from_choice(attribute=attribute)
 
     def __assign_points_to_an_attribute(self):
-        keyPoints = self.points.keys()
         point_message = f"Qual ponto deseja atribuir?\
           Restantes: {self.total_points} |"
-        point = 1
-        if len(keyPoints) != 1:
-            questions = [
-                inquirer.List('ponto',
-                              message=point_message,
-                              choices=keyPoints,
-                              carousel=True,
-                              validate=self.__validate_valid_points
-                              )
-            ]
-            answer = inquirer.prompt(questions)
-            point = answer['ponto']
-        modifier_on_object = int(point)
-        point_on_object = self.points[str(modifier_on_object)]
+        questions = [
+            inquirer.List('ponto',
+                          message=point_message,
+                          choices=self.points,
+                          carousel=True,
+                          validate=self.__validate_valid_points,
+
+                          )
+        ]
+        answer = inquirer.prompt(questions)
+        point = answer['ponto']
+        losing_total_points = int(point)
+        earning_modifier_points = DEFAULT_MODIFIER_POINTS.get(
+            str(losing_total_points))
+
         self.change_attribute(
-            attribute=self.__selected_attribute, mod=modifier_on_object)
-        self.total_points += point_on_object
+            attribute=self.__selected_attribute, mod=earning_modifier_points)
+        self.total_points += losing_total_points
 
     def __validate_valid_points(self, answers, current):
-        point_value_on_object = int(self.points[str(current)])
-        if self.total_points + point_value_on_object < 0:
+        if self.total_points + current < 0:
             raise errors.ValidationError(
                 "",
-                reason=f"O ponto que foi atribuido é mais custoso {point_value_on_object} do que o total de pontos: {self.total_points}")  # noqa: E501
+                reason=f"O ponto que foi atribuido é mais custoso {current} do que o total de pontos: {self.total_points}")  # noqa: E501
         return True
