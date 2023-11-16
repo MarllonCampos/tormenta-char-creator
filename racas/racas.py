@@ -25,8 +25,8 @@ class Racas():
             "Osteon",
             "Qareen",
             "Sereia/Tritao",
-            "Silfide",
             "Sulfure",
+            "Silfide",
             "Trog",
         ]
         self.__ask_for_race()
