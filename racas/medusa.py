@@ -9,7 +9,7 @@ class Medusa(racapadrao.RacaPadrao):
         self.remove_attributes = None
         self.except_attributes = None
         self.any_attribute = None
-        print("Medusa")
+        print(__class__.__name__)
 
     def any_attribute_choices(self):
         return super().any_attribute_choices(self.except_attributes)
