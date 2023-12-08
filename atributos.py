@@ -1,6 +1,8 @@
 import inquirer
 from inquirer import errors
 from inquirer.themes import BlueComposure
+from enum_atributos import AtributosPadrao
+
 from utils import cls
 
 DEFAULT_ATTRIBUTE_CHOICES = [('Força', "FOR"),
@@ -48,6 +50,36 @@ class Atributos():
         self._total_points = DEFAULT_TOTAL_POINTS
         self.__selected_attribute = ""
         self.assign_points()
+
+    @property
+    def FOR(self):
+        attribute = AtributosPadrao.FOR.value
+        return self.attributes[attribute]
+
+    @property
+    def DES(self):
+        attribute = AtributosPadrao.DES.value
+        return self.attributes[attribute]
+
+    @property
+    def CON(self):
+        attribute = AtributosPadrao.CON.value
+        return self.attributes[attribute]
+
+    @property
+    def INT(self):
+        attribute = AtributosPadrao.INT.value
+        return self.attributes[attribute]
+
+    @property
+    def SAB(self):
+        attribute = AtributosPadrao.SAB.value
+        return self.attributes[attribute]
+
+    @property
+    def CAR(self):
+        attribute = AtributosPadrao.CAR.value
+        return self.attributes[attribute]
 
     @property
     def choices(self):
