@@ -1,6 +1,8 @@
 """Classe Base para Armas"""
 from typing import List
+from enum import Enum
 from src.project_typing import WeaponHilt, WeaponProficiency, WeaponRange, WeaponType
+
 class BaseWeapon:
     """Uma classe padrão para extender para as próximas armas."""
     def __init__(self):
@@ -19,14 +21,17 @@ class BaseWeapon:
     def __repr__(self) -> str:
         class_name = self.__class__.__name__
         return (
-            f"{class_name} [name: {self.name}, type: {self.type},  "
-            f"damage: {self.damage}, range: {self.range}, "
-            f"weapon_threat: {self.weapon_threat}, price: {self.price}, "
-            f"weight: {self.weight}, proficiency: {self.proficiency}, "
+            f"{class_name} -> [name: {self.name}, type: {self.type}, "
+            f"damage: {self.damage}, range: {self.range},"
+            f"weapon_threat: {self.weapon_threat}, price: {self.price},"
+            f"weight: {self.weight}, proficiency: {self.proficiency},"
             f"is_melee: {self.is_melee}]"
         )
 
-
-class Ammunition:
+    def weapon_attributes(self) -> list[Enum]:
+        """Função que mostra todos os atributos especificos da arma"""
+        return [self.hilt,self.proficiency,self.range,self.type]
+        
+class Ammunition: # TODO -> Criar um arquivo e especificar essa Classe como um Item
     def __init__(self) -> None:
         pass
