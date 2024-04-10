@@ -1,3 +1,5 @@
+"""Arquivo usado para exportar as classes das armas"""
+from typing import List
 from .adaga import Adaga
 from .alabarda import Alabarda
 from .alfange import Alfange
@@ -37,9 +39,10 @@ from .pistola import Pistola
 from .rede import Rede
 from .tacape import Tacape
 from .tridente import Tridente
+from .base import BaseWeapon
 
 
-ALL_WEAPONS = [Adaga(),
+ALL_WEAPONS: List[BaseWeapon] = [Adaga(),
 Alabarda(),
 Alfange(),
 ArcoCurto(),

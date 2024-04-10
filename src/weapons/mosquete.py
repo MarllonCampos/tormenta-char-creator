@@ -5,7 +5,7 @@ class Mosquete(BaseWeapon):
     """Representação da Mosquete no Tormenta20"""
     def __init__(self):
         super().__init__()
-        self.proficiency = WeaponProficiency.EXOTICA
+        self.proficiency = WeaponProficiency.FOGO
         self.is_melee = False
         self.hilt = WeaponHilt.DUPLA
         self.name = "Mosquete"
