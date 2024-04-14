@@ -5,77 +5,144 @@
 
 
 # Classe de Raças
-- [x] Aggelus
-- [x] Anao
-- [x] Dahllan
-- [x] Elfo
-- [x] Goblin
-- [x] Golem
-- [x] Humano
-- [x] Hynne
-- [x] Kliren
-- [x] Lefou
-- [x] Medusa
-- [x] Minotauro
-- [x] Osteon
-- [x] Qareen
-- [x] SereiaTritao
-- [x] Silfide
-- [x] Sulfure
-- [x] Trog
+<table>
+  <caption> Raças </caption>
+  </td>
+  <tr>
+    <td>Aggelus</td>
+    <td>Anao</td>
+  </tr>
+
+  <tr>
+    <td>Dahllan</td>
+    <td>Elfo</td>
+  </tr>
+  <tr>
+    <td>Goblin</td>
+    <td>Golem</td>
+  </tr>
+  <tr>
+    <td>Humano</td>
+    <td>Hynne</td>
+  </tr>
+  <tr>
+    <td>Kliren</td>
+    <td>Lefou</td>
+  </tr>
+  <tr>
+    <td>Medusa</td>
+    <td>Minotauro</td>
+  </tr>
+  <tr>
+    <td>Osteon</td>
+    <td>Qareen</td>
+  </tr>
+  <tr>
+    <td>SereiaTritao</td>
+    <td>Silfide</td>
+  </tr>
+  <tr>
+    <td>Sulfure</td>
+    <td>Trog</td>
+  </tr>
+</table>
 
 # Classe de Armas
-| **Simples** |
-| --- | 
-| Adaga | 
-| Espada Curta |
-| Foice |
-| Clava |
-| Lança |
-| Maça |
-| Bordão |
-| Pique |
-| Tacape |
-| Azagaia |
-| Besta Leve |
-| Funda |
-| Arco Curto |
+<table>
+  <caption> Simples </caption>
+  <tr>
+    <td>Adaga</td>
+    <td>Espada Curta</td>
+  </tr>
+  <tr>
+    <td>Foice</td>
+    <td>Clava</td>
+  </tr>
+  <tr>
+    <td>Lança</td>
+    <td>Maça</td>
+  </tr>
+  <tr>
+    <td>Bordão</td>
+    <td>Pique</td>
+  </tr>
+  <tr>
+    <td>Tacape</td>
+    <td>Azagaia</td>
+  </tr>
+  <tr>
+    <td>Besta Leve</td>
+    <td>Funda</td>
+  </tr>
+  <tr>
+    <td>Arco Curto</td>
+  </tr>
+</table>
 
-| **Marciais** | 
-| --- |
-| Machadinha |
-| Cimitarra |
-| Espada Longa |
-| Florete |
-| Machado de Batalha |
-| Mangual |
-| Martelo de Guerra |
-| Picareta |
-| Tridente |
-| Alabarda |
-| Alfange |
-| Gadanho |
-| Lança Montada |
-| Machado de Guerra |
-| Marreta |
-| Montante |
-| Arco Longo |
-| Besta Pesada |
+<table>
+<caption>Marciais</caption>
+<tr>
+  <td>Machadinha</td>
+  <td>Cimitarra</td>
+</tr>
+<tr>
+  <td>Espada Longa</td>
+  <td>Florete</td>
+</tr>
+<tr>
+  <td>Machado de Batalha</td>
+  <td>Mangual</td>
+</tr>
+<tr>
+  <td>Martelo de Guerra</td>
+  <td>Picareta</td>
+</tr>
+<tr>
+  <td>Tridente</td>
+  <td>Alabarda</td>
+</tr>
+<tr>
+  <td>Alfange</td>
+  <td>Gadanho</td>
+</tr>
+<tr>
+  <td>Lança Montada</td>
+  <td>Machado de Guerra</td>
+</tr>
+<tr>
+  <td>Marreta</td>
+  <td>Montante</td>
+</tr><tr>
+  <td>Arco Longo</td>
+  <td>Besta Pesada</td>
+</tr>
+</table>
 
-| **Exóticas** |
-| --- |
-| Chicote |
-| Espada Bastarda |
-| Katana |
-| Machado Anão |
-| Corrente de Espinhos |
-| Machado Táurico |
-| Rede |
-
-| **Fogo** |
-| --- |
-| Pistola|
-| Mosquete|
+<table>
+<caption>Exóticas</caption>
+<tr>
+  <td>Chicote</td>
+  <td>Espada Bastarda</td>
+</tr>
+<tr>
+  <td>Katana</td>
+  <td>Machado Anão</td>
+</tr>
+<tr>
+  <td>Corrente de Espinhos</td>
+  <td>Machado Táurico</td>
+</tr>
+<tr>
+  <td>Rede</td>
+</tr>
+</table>
+<table>
+  <caption>Fogo</caption>
+  <tr> 
+    <td>Pistola</td>
+    <td>Mosquete</td>
+  </tr>
+</table>
 
 
 
