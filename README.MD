@@ -6,7 +6,7 @@
 
 # Classe de Raças
 <table>
-  <caption> Raças </caption>
+  <caption  style="text-align:center;"> Raças </caption>
   </td>
   <tr>
     <td>Aggelus</td>
