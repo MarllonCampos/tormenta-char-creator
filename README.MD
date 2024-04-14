@@ -24,7 +24,59 @@
 - [x] Sulfure
 - [x] Trog
 
-# Habilidade de Raças
+# Classe de Armas
+| **Simples** |
+| --- | 
+| Adaga | 
+| Espada Curta |
+| Foice |
+| Clava |
+| Lança |
+| Maça |
+| Bordão |
+| Pique |
+| Tacape |
+| Azagaia |
+| Besta Leve |
+| Funda |
+| Arco Curto |
+
+| **Marciais** | 
+| --- |
+| Machadinha |
+| Cimitarra |
+| Espada Longa |
+| Florete |
+| Machado de Batalha |
+| Mangual |
+| Martelo de Guerra |
+| Picareta |
+| Tridente |
+| Alabarda |
+| Alfange |
+| Gadanho |
+| Lança Montada |
+| Machado de Guerra |
+| Marreta |
+| Montante |
+| Arco Longo |
+| Besta Pesada |
+
+| **Exóticas** |
+| --- |
+| Chicote |
+| Espada Bastarda |
+| Katana |
+| Machado Anão |
+| Corrente de Espinhos |
+| Machado Táurico |
+| Rede |
+
+| **Fogo** |
+| --- |
+| Pistola|
+| Mosquete|
+
 
 
 # Classe de Classes 
