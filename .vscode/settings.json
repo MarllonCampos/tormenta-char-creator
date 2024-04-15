@@ -1,6 +1,9 @@
 {
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8"
+  "files.exclude": {
+    "**/*.pyc": { "when": "$(basename).py" },
+    "**/__pycache__": true,
+    "**/*.pytest cache": true,
+    "**/venv": true
   },
-  "python.formatting.provider": "none"
+  
 }
