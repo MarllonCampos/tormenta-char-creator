@@ -1,6 +1,8 @@
 """Florete"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class Florete(BaseWeapon):
     """Representação da Florete no Tormenta20"""
     def __init__(self):

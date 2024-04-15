@@ -1,22 +1,31 @@
 """Classe Base para Armas"""
-from typing import List
+from typing import List, Union
 from enum import Enum
-from src.project_typing import WeaponHilt, WeaponProficiency, WeaponRange, WeaponType
+from src.project_typing import WeaponHilt, WeaponProficiency
+from src.project_typing import WeaponRange, WeaponType
+
 
 class BaseWeapon:
     """Uma classe padrão para extender para as próximas armas."""
     def __init__(self):
-        self.type: WeaponType | List[WeaponType] = "" # Corte / Perfuração / Impacto
-        self.weight: float = "" # 1 - 10
-        self.damage: str | List[str]  = "" # 1d3 - 4d12
-        self.range: WeaponRange | List[WeaponRange] = "" # Pessoal / Curto / Médio / Longo
-        self.weapon_threat: str | int | List[str|int] = "" # x2 - 14
-        self.price: float = "" # 0 - 1000000
-        self.name: str = "" # Adaga
-        self.proficiency: WeaponProficiency = "" # Simples / Marcial / Exótica / Fogo
-        self.is_melee: bool = None # Corpo / Distancia
+        # Corte / Perfuração / Impacto
+        self.type: WeaponType | List[WeaponType] = ""
+        self.weight: float = ""  # 1 - 10
+        self.damage: str | List[str] = ""  # 1d3 - 4d12
+
+        # Pessoal / Curto / Médio / Longo
+        self.range: WeaponRange | List[WeaponRange] = ""
+
+        # x2 - 14
+        self.weapon_threat: str | int | List[Union[str | int]] = ""
+        self.price: float = ""  # 0 - 1000000
+        self.name: str = ""  # Adaga
+
+        # Simples / Marcial / Exótica / Fogo
+        self.proficiency: WeaponProficiency = ""
+        self.is_melee: bool = None  # Corpo / Distancia
         self.hilt: WeaponHilt = ""
-        self.ammunition: None | Ammunition = None if self.is_melee else Ammunition
+        self.ammunition: None | Ammunition = None if self.is_melee else Ammunition  # noqa: E501
 
     def __repr__(self) -> str:
         class_name = self.__class__.__name__
@@ -30,8 +39,11 @@ class BaseWeapon:
 
     def weapon_attributes(self) -> list[Enum]:
         """Função que mostra todos os atributos especificos da arma"""
-        return [self.hilt,self.proficiency,self.range,self.type]
-        
-class Ammunition: # TODO -> Criar um arquivo e especificar essa Classe como um Item
+        return [self.hilt, self.proficiency, self.range, self.type]
+
+
+# TODO -> Criar um arquivo e especificar essa Classe como um Item
+class Ammunition:
+    """Classe base para munições"""
     def __init__(self) -> None:
         pass

@@ -1,6 +1,8 @@
 """Rede"""
 from src.weapons.base import BaseWeapon
 from src.project_typing import WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class Rede(BaseWeapon):
     """Representação da Rede no Tormenta20"""
     def __init__(self):

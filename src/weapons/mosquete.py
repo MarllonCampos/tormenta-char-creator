@@ -1,6 +1,8 @@
 """Mosquete"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class Mosquete(BaseWeapon):
     """Representação da Mosquete no Tormenta20"""
     def __init__(self):
@@ -11,7 +13,7 @@ class Mosquete(BaseWeapon):
         self.name = "Mosquete"
         self.price = 500
         self.damage = "2d8"
-        self.weapon_threat = [19,"x3"]
+        self.weapon_threat = [19, "x3"]
         self.range = WeaponRange.MEDIO
         self.type =  WeaponType.PERFURACAO
         self.weight = 1

@@ -1,6 +1,8 @@
 """Picareta"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class Picareta(BaseWeapon):
     """Representação da Picareta no Tormenta20"""
     def __init__(self):

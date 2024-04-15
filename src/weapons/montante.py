@@ -1,6 +1,8 @@
 """Montante"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class Montante(BaseWeapon):
     """Representação da Montante no Tormenta20"""
     def __init__(self):
