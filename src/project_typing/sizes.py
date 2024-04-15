@@ -1,4 +1,6 @@
 from .base_enum import BaseEnum
+
+
 class Sizes(BaseEnum):
   MINUSCULO = "minúsculo"
   PEQUENO = "pequeno"

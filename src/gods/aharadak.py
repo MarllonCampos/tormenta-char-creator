@@ -2,6 +2,8 @@
 from .base import BaseGod
 from src.project_typing import EnergiesEnum
 from src.weapons import CorrenteEspinhos
+
+
 class Aharadak(BaseGod):
   def __init__(self) -> None:
     super().__init__()

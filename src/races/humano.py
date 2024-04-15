@@ -1,11 +1,19 @@
+"""Humano"""
 from src.races import BaseRace
-from src.project_typing import Sizes
+from src.sizes import Medio
+
 
 class Humano(BaseRace):
+    """Descritivo das caracteristicas da Raça Humano"""
     def __init__(self):
-        self.size = Sizes.MEDIO
-        self.attributes = None
+        super().__init__()
+        self.size = Medio()
+        self.add_attributes = None
         self.remove_attributes = None
         self.except_attributes = None
         self.any_attribute = 3
-        print(__class__.__name__)
+
+    def versatil(self):
+        # TODO -> Criar uma classe de Pericias e permitir escolher 2
+        # pericias quaisquer
+        pass

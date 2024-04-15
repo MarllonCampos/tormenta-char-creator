@@ -2,6 +2,8 @@
 from typing import List
 from src.weapons import BaseWeapon
 from src.project_typing import EnergiesEnum
+
+
 class BaseGod:
   """Classe padrão para extender para so próximos Deuses"""
   def __init__(self) -> None:

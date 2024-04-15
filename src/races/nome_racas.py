@@ -1,4 +1,5 @@
 from enum import Enum
+
 from races import aggelus as aggelusClass
 from races import anao as anaoClass
 from races import dahllan as dahllanClass
