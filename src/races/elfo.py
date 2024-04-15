@@ -1,15 +1,28 @@
-from src.races import base
+"""Elfo"""
+from src.project_typing import Attributes
+from src.races import BaseRace
+from src.sizes import Medio
 
 
-class Elfo(base.RacaPadrao):
+class Elfo(BaseRace):
+    """Descritivo das caracteristicas da Raça Elfo"""
     def __init__(self):
-        self.displacement = 12
-        self.size = "Médio"
-        self.attributes = ["INT", "INT", "DES"]
-        self.remove_attributes = ["CON"]
+        self.size = Medio()
+        self.attributes = [Attributes.INT, Attributes.INT, Attributes.DES]
+        self.remove_attributes = [Attributes.CON]
         self.except_attributes = None
         self.any_attribute = None
         print(__class__.__name__)
 
-    def any_attribute_choices(self):
-        return super().any_attribute_choices(self.except_attributes)
+    def graca_glorienn(self):
+        # TODO -> Seu deslocamento é 12m (em vez de 9m)
+        pass
+
+    def sangue_magico(self):
+        # TODO -> Você recebe +1 ponto de mana por nível.
+        pass
+
+    def sentidos_elficos(self):
+        # TODO -> Você recebe visão na penumbra e +2
+        # em Misticismo e Percepção.
+        pass

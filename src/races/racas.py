@@ -1,6 +1,8 @@
-import inquirer
 # import json
 import re
+
+import inquirer
+
 from races import nome_racas
 from utils import cls
 

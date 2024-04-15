@@ -1,6 +1,7 @@
 """Enum de empunhadura"""
 from .base_enum import BaseEnum
 
+
 class WeaponHilt(BaseEnum):
     """Enum de empunhadura da arma"""
     LEVE = "leve"

@@ -1,15 +1,17 @@
-from src.races import base
+"""Kliren"""
+from src.races import BaseRace
+from src.sizes import Medio
+from src.project_typing import Attributes
 
 
-class Kliren(base.RacaPadrao):
+class Kliren(BaseRace):
+    """Descritivo das caracteristicas da Raça Kliren"""
     def __init__(self):
-        self.displacement = 9
-        self.size = "Médio"
-        self.attributes = ["INT", "INT", "CAR"]
-        self.remove_attributes = ["FOR"]
+        self.size = Medio()
+        self.attributes = [Attributes.INT, Attributes.INT, Attributes.CAR]
+        self.remove_attributes = [Attributes.FOR]
         self.except_attributes = None
         self.any_attribute = None
         print(__class__.__name__)
 
-    def any_attribute_choices(self):
-        return super().any_attribute_choices(self.except_attributes)
+    
