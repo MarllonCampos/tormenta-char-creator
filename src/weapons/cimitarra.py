@@ -1,6 +1,8 @@
 """Cimitarra"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class Cimitarra(BaseWeapon):
     """Representação da Cimitarra no Tormenta20"""
     def __init__(self):

@@ -1,6 +1,8 @@
 """Tacape"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class Tacape(BaseWeapon):
     """Representação da Tacape no Tormenta20"""
     def __init__(self):

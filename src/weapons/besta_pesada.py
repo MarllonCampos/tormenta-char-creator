@@ -1,6 +1,8 @@
 """Besta Pesada"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class BestaPesada(BaseWeapon):
     """Representação da Besta Pesada no Tormenta20"""
     def __init__(self):

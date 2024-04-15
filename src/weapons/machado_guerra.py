@@ -1,6 +1,8 @@
 """Machado de Guerra"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class MachadoGuerra(BaseWeapon):
     """Representação da Machado de Guerra no Tormenta20"""
     def __init__(self):

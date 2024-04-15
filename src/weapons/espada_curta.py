@@ -1,6 +1,8 @@
 """Espada Curta"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class EspadaCurta(BaseWeapon):
     """Representação da espada curta no Tormenta20"""
     def __init__(self):

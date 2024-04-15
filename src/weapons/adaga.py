@@ -1,6 +1,8 @@
 """Arma Adaga"""
 from src.weapons.base import BaseWeapon
-from src.project_typing import WeaponType,WeaponRange, WeaponProficiency, WeaponHilt
+from src.project_typing import WeaponType, WeaponRange, WeaponProficiency, WeaponHilt
+
+
 class Adaga(BaseWeapon):
     """Representação da adaga no Tormenta20"""
     def __init__(self):
