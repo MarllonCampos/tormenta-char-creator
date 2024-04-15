@@ -1,6 +1,6 @@
 from atributos import Atributos, DEFAULT_ATTRIBUTE_CHOICES
 
-from racas.racas import Racas
+from races.racas import Racas
 from classes import Classes
 import inquirer
 from inquirer import errors
