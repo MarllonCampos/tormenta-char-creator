@@ -1,7 +1,8 @@
-from src.races import base
+"""Trog"""
+from src.races import BaseRace
 
 
-class Trog(base.RacaPadrao):
+class Trog(BaseRace):
     def __init__(self):
         self.displacement = 9
         self.size = "Médio"
