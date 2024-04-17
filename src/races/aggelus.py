@@ -1,16 +1,22 @@
-from src.races import base
+"""Aggelus"""
+from src.races import BaseRace
+from src.sizes import Medio
+from src.project_typing import Attributes
 
 
-class Aggelus(base.RacaPadrao):
-
+class Aggelus(BaseRace):
+    """Descritivo das caracteristicas da Raça Aggelus"""
     def __init__(self):
-        self.displacement = 9
-        self.size = "Médio"
-        self.attributes = ["SAB", "SAB", "CAR"]
+        self.size = Medio()
+        self.attributes = [Attributes.SAB, Attributes.SAB, Attributes.CAR]
         self.remove_attributes = None
         self.except_attributes = None
         self.any_attribute = None
-        print("Aggelus")
+        print(__class__.__name__)
 
-    def any_attribute_choices(self):
-        return super().any_attribute_choices(self.except_attributes)
+    def luz_sagrada(self):
+        # TODO -> Você recebe +2 em Diplomacia e Intuição.
+        # Além disso, pode lançar Luz (como uma magia divina;
+        # atributo-chave Carisma). Caso aprenda novamente
+        # essa magia, seu custo diminui em –1 PM
+        pass

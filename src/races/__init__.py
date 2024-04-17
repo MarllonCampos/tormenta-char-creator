@@ -13,11 +13,11 @@ from .kliren import Kliren
 from .lefou import Lefou
 from .medusa import Medusa
 from .minotauro import Minotauro
-from .nome_racas import Nome_Racas
 from .osteon import Osteon
 from .qareen import Qareen
 from .racas import Racas
-from .sereiatritao import Sereiatritao
+from .sereiatritao import SereiaTritao
 from .silfide import Silfide
 from .sulfure import Sulfure
 from .trog import Trog
+from .suraggel import Suraggel
