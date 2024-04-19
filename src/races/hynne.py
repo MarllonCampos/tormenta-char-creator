@@ -1,5 +1,5 @@
 """Hynne"""
-from src.races import BaseRace
+from src.races.base import BaseRace
 from src.sizes import Pequeno
 from src.project_typing import Attributes
 

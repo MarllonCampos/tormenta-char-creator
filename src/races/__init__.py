@@ -1,8 +1,7 @@
 """Arquivo de importações das classes de Raças"""
 # flake8: noqa F401
-from .aggelus import Aggelus
 from .anao import Anao
-from .base import BaseRace
+from .aggelus import Aggelus
 from .dahllan import Dahllan
 from .elfo import Elfo
 from .goblin import Goblin
@@ -15,7 +14,6 @@ from .medusa import Medusa
 from .minotauro import Minotauro
 from .osteon import Osteon
 from .qareen import Qareen
-from .racas import Racas
 from .sereiatritao import SereiaTritao
 from .silfide import Silfide
 from .sulfure import Sulfure
