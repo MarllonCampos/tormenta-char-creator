@@ -1,10 +1,10 @@
 """Goblin"""
-from src.races import base
+from src.races.base import BaseRace
 from src.sizes import Pequeno
 from src.project_typing import Attributes
 
 
-class Goblin(base.RacaPadrao):
+class Goblin(BaseRace):
     """Descritivo das caracteristicas da Raça Goblin"""
     def __init__(self):
         self.size = Pequeno()

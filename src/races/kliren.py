@@ -1,6 +1,6 @@
 """Kliren"""
-from src.races import BaseRace
-from src.sizes import Medio
+from src.races.base import BaseRace
+
 from src.project_typing import Attributes
 
 
