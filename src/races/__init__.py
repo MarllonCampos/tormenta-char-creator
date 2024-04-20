@@ -18,4 +18,3 @@ from .sereiatritao import SereiaTritao
 from .silfide import Silfide
 from .sulfure import Sulfure
 from .trog import Trog
-from .suraggel import Suraggel

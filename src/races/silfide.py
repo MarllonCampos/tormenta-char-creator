@@ -1,17 +1,19 @@
-"""Raça Silfide"""
+"""Silfide"""
 from src.races.base import BaseRace
 
 from src.project_typing import Attributes
 
 class Silfide(BaseRace):
+    """Descritivo das  caracteristicas da Raça Silfíde"""
+
     def __init__(self):
         super().__init__()
-        self.size = Medio()
         self.attributes = [Attributes.CAR, Attributes.CAR, Attributes.DES]
         self.remove_attributes = [Attributes.FOR, Attributes.FOR]
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def asas_borboleta(self):
         # TODO -> Seu tamanho é Minúsculo. Você pode 

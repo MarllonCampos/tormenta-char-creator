@@ -7,12 +7,13 @@ from src.project_typing import Attributes
 class Minotauro(BaseRace):
     """Descritivo das caracteristicas da Raça Minotauro"""
     def __init__(self):
-        self.size = Medio()
+        super().__init__()
         self.attributes = [Attributes.FOR, Attributes.FOR, Attributes.CON]
         self.remove_attributes = [Attributes.SAB]
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def chifres(self):
         # TODO -> Você possui uma arma natural dechifres (dano 1d6,

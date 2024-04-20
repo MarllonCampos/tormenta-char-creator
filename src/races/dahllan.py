@@ -7,12 +7,13 @@ from src.races.base import BaseRace
 class Dahllan(BaseRace):
     """Descritivo das caracteristicas da Raça Dahllan"""
     def __init__(self):
-        self.size = Medio()
+        super().__init__()
         self.attributes = [Attributes.SAB, Attributes.SAB,  Attributes.DES]
         self.remove_attributes = [Attributes.INT]
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def amiga_das_plantas(self):
         # TODO -> Você pode lançar a magia

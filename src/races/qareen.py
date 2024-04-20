@@ -7,12 +7,13 @@ from src.project_typing import Attributes
 class Qareen(BaseRace):
     """Descritivo das caracteristicas da Raça Qareen"""
     def __init__(self):
-        self.size = Medio()
+        super().__init__()
         self.attributes = [Attributes.CAR, Attributes.CAR, Attributes.INT]
         self.remove_attributes = [Attributes.SAB]
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def desejos(self):
         # TODO -> Se lançar uma magia que alguém tenha pedido desde

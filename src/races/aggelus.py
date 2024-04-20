@@ -1,18 +1,19 @@
 """Aggelus"""
-from src.races.base import BaseRace
+from src.races.suraggel import Suraggel
 
 from src.project_typing import Attributes
 
 
-class Aggelus(BaseRace):
+class Aggelus(Suraggel):
     """Descritivo das caracteristicas da Raça Aggelus"""
     def __init__(self):
-        self.size = Medio()
+        super().__init__()
         self.attributes = [Attributes.SAB, Attributes.SAB, Attributes.CAR]
         self.remove_attributes = None
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def luz_sagrada(self):
         # TODO -> Você recebe +2 em Diplomacia e Intuição.
