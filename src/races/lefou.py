@@ -7,12 +7,13 @@ from src.project_typing import Attributes
 class Lefou(BaseRace):
     """Descritivo das caracteristicas da Raça Lefou"""
     def __init__(self):
-        self.size = Medio()
+        super().__init__()
         self.attributes = None
         self.remove_attributes = [Attributes.CAR]
         self.except_attributes = [Attributes.CAR]
         self.any_attribute = 3
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def cria_tormenta(self):
         # TODO -> Você é uma criatura do tipo monstro e recebe +5 em testes de 

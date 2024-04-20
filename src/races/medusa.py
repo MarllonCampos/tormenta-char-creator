@@ -1,3 +1,4 @@
+"""Medusa"""
 from src.races.base import BaseRace
 
 from src.project_typing import Attributes
@@ -5,12 +6,13 @@ from src.project_typing import Attributes
 
 class Medusa(BaseRace):
     def __init__(self):
-        self.size = Medio()
+        super().__init__()
         self.attributes = [Attributes.DES, Attributes.DES, Attributes.CAR]
         self.remove_attributes = None
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     
     def cria_megalokk(self):

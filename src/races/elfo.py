@@ -7,12 +7,13 @@ from src.races.base import BaseRace
 class Elfo(BaseRace):
     """Descritivo das caracteristicas da Raça Elfo"""
     def __init__(self):
-        self.size = Medio()
+        super().__init__()
         self.attributes = [Attributes.INT, Attributes.INT, Attributes.DES]
         self.remove_attributes = [Attributes.CON]
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def graca_glorienn(self):
         # TODO -> Seu deslocamento é 12m (em vez de 9m)

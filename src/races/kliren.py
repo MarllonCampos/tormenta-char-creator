@@ -7,12 +7,13 @@ from src.project_typing import Attributes
 class Kliren(BaseRace):
     """Descritivo das caracteristicas da Raça Kliren"""
     def __init__(self):
-        self.size = Medio()
+        super().__init__()
         self.attributes = [Attributes.INT, Attributes.INT, Attributes.CAR]
         self.remove_attributes = [Attributes.FOR]
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def hibrido(self):
         # TODO -> Sua natureza multifacetada fez com

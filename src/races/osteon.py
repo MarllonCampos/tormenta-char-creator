@@ -1,18 +1,20 @@
-"""Raça Osteon"""
+"""Osteon"""
 from src.races.base import BaseRace
 
 from src.project_typing import Attributes
 
 
 class Osteon(BaseRace):
+    """Descritivo das caracteristicas da Raça Osteon"""
+    
     def __init__(self):
         super().__init__()
-        self.size = Medio()
         self.attributes = None
         self.remove_attributes = None
         self.except_attributes = [Attributes.CON]
         self.any_attribute = 3
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def armadura_ossea(self):
         # TODO -> Você recebe redução de corte,

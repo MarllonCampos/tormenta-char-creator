@@ -1,18 +1,19 @@
 """Sulfure"""
-from src.races.base import BaseRace
+from src.races.suraggel import Suraggel
 
 from src.project_typing import Attributes
 
 
-class Sulfure(BaseRace):
+class Sulfure(Suraggel):
     """Descritivo das caracteristicas da Raça Sulfure"""
     def __init__(self):
-        self.size = Medio()
+        super().__init__()
         self.attributes = [Attributes.DES, Attributes.DES, Attributes.INT]
         self.remove_attributes = None
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def sombras_profanas(self):
         # TODO -> Você recebe +2 em Enganação e Furtividade.

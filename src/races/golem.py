@@ -7,13 +7,13 @@ from src.project_typing import Attributes
 class Golem(BaseRace):
     """Descritivo das caracteristicas da Raça Golem"""
     def __init__(self):
-
-        self.size = Medio()
+        super().__init__()
         self.attributes = [Attributes.FOR, Attributes.FOR, Attributes.CON]
         self.remove_attributes = [Attributes.CAR]
         self.except_attributes = None
         self.any_attribute = None
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def chassi(self):
         # TODO -> Seu corpo artificial é resistente, mas rígido.

@@ -4,14 +4,16 @@ from src.races.base import BaseRace
 
 
 class SereiaTritao(BaseRace):
+    """Descritivo das caracteristicas da Raça SereiaTritao"""
+
     def __init__(self):
         super().__init__()
-        self.size = Medio()
         self.attributes = None
         self.remove_attributes = None
         self.except_attributes = None
         self.any_attribute = 3
-        print(__class__.__name__)
+        for method in self.all_abilities():
+            print(method)
 
     def cancao_mares(self):
         # TODO -> Você pode lançar duas das magias

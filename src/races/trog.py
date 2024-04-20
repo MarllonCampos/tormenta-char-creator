@@ -4,17 +4,16 @@ from src.races.base import BaseRace
 
 from src.project_typing import Attributes
 class Trog(BaseRace):
+    """Descritivo das caracteristicas da Raça Trog"""        
     def __init__(self):
-        """Descritivo das caracteristicas da Raça Trog"""        
-
+        super().__init__()
         self.attributes = [Attributes.CON, Attributes.CON, Attributes.FOR]
         self.remove_attributes = [Attributes.INT]
         self.except_attributes = None
         self.any_attribute = None
-        first_method = self.all_methods()[0]
+        for method in self.all_abilities():
+            print(method)
 
-        method = getattr(self,first_method)
-        method()
 
 
     def mau_cheiro(self):
