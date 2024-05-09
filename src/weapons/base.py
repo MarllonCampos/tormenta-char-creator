@@ -30,11 +30,11 @@ class BaseWeapon:
     def __repr__(self) -> str:
         class_name = self.__class__.__name__
         return (
-            f"{class_name} -> [name: {self.name}, type: {self.type}, "
-            f"damage: {self.damage}, range: {self.range},"
-            f"weapon_threat: {self.weapon_threat}, price: {self.price},"
-            f"weight: {self.weight}, proficiency: {self.proficiency},"
-            f"is_melee: {self.is_melee}]"
+            f"{class_name} -> [\n\tname: {self.name}, \n\ttype: {self.type},\n"
+            f"\tdamage: {self.damage}, \n\trange: {self.range},\n"
+            f"\tweapon_threat: {self.weapon_threat}, \n\tprice: {self.price},\n"
+            f"\tweight: {self.weight}, \n\tproficiency: {self.proficiency},\n"
+            f"\tis_melee: {self.is_melee}\n]"
         )
 
     def weapon_attributes(self) -> list[Enum]:

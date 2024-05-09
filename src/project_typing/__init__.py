@@ -5,3 +5,4 @@ from .weapon_hilt import WeaponHilt
 from .energies import EnergiesEnum
 from .attributes import Attributes
 from .sizes import Sizes
+from .proficiencies import Proficiencies

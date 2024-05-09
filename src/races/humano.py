@@ -15,4 +15,5 @@ class Humano(BaseRace):
     def versatil(self):
         # TODO -> Criar uma classe de Pericias e permitir escolher 2
         # pericias quaisquer
+        # Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder  # geral a sua escolha
         pass
