@@ -1,5 +1,4 @@
 """Enum de Energias"""
-from src.weapons.store import StoreWeapons
 from .base_enum import BaseEnum
 
 class Proficiencies(BaseEnum):
