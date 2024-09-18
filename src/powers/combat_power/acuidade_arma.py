@@ -14,4 +14,3 @@ class AcuidadeArma(BasePower):
             Attributes.DES: 1,
           }
         }
-        print(self.name)

@@ -1,6 +1,6 @@
 """Poder Ataque Preciso"""
 from src.powers.base import BasePower
-from src.powers.combat_power import EstiloUmaArma
+from src.powers.combat_power.estilo_uma_arma import EstiloUmaArma
 
 
 class AtaquePreciso(BasePower):

@@ -1,6 +1,6 @@
 """Poder Arremesso Múltiplo"""
 from src.powers.base import BasePower
-from src.powers.combat_power import EstiloArremesso
+from src.powers.combat_power.estilo_arremesso import EstiloArremesso
 from src.project_typing.attributes import Attributes
 
 

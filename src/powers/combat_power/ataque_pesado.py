@@ -1,6 +1,6 @@
 """Poder Ataque Pesado"""
 from src.powers.base import BasePower
-from src.powers.combat_power import EstiloDuasMaos
+from src.powers.combat_power.estilo_duas_maos import EstiloDuasMaos
 
 
 class AtaquePesado(BasePower):

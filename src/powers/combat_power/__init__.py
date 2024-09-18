@@ -1,4 +1,7 @@
 """Arquivo usado para exportar as classes dos Poderes de Combate"""
+from typing import List
+
+from ..base import BasePower
 from .acuidade_arma import AcuidadeArma
 from .arma_secundaria_grande import ArmaSecundariaGrande
 from .arremesso_multiplo import ArremessoMultiplo
@@ -35,3 +38,43 @@ from .reflexos_combate import ReflexosCombate
 from .saque_rapido import SaqueRapido
 from .trespassar import Trespassar
 from .vitalidade import Vitalidade
+
+ALL_COMBAT_POWER: List[BasePower] = [
+  AcuidadeArma(),
+  ArmaSecundariaGrande(),
+  ArremessoMultiplo(),
+  ArremessoPotente(),
+  AtaquePesado(),
+  AtaquePoderoso(),
+  AtaquePreciso(),
+  CargaCavalaria(),
+  CombateDefensivo(),
+  DerrubarAprimorado(),
+  DesarmarAprimorado(),
+  DisparoPreciso(),
+  DisparoRapido(),
+  EmpunhaduraPoderosa(),
+  Encouracado(),
+  Esquiva(),
+  EstiloArmaEscudo(),
+  EstiloArmaLonga(),
+  EstiloArremesso(),
+  EstiloDesarmado(),
+  EstiloDisparo(),
+  EstiloDuasArmas(),
+  EstiloDuasMaos(),
+  EstiloUmaArma(),
+  Fanatico(),
+  FintaAprimorada(),
+  Ginete(),
+  Inexpugnavel(),
+  MiraApurada(),
+  Piqueiro(),
+  PresencaAterradora(),
+  QuebrarAprimorado(),
+  ReflexosCombate(),
+  SaqueRapido(),
+  Trespassar(),
+  Vitalidade()
+]
+

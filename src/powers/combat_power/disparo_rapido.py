@@ -1,6 +1,6 @@
 """Poder Disparo Rápido"""
 from src.powers.base import BasePower
-from src.powers.combat_power import EstiloDisparo
+from src.powers.combat_power.estilo_disparo import EstiloDisparo
 from src.project_typing.attributes import Attributes
 
 

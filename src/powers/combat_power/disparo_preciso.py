@@ -1,6 +1,6 @@
 """Poder Disparo Preciso"""
 from src.powers.base import BasePower
-from src.powers.combat_power import EstiloDisparo
+from src.powers.combat_power.estilo_disparo import EstiloDisparo
 
 
 class DisparoPreciso(BasePower):

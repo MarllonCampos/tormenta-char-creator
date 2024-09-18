@@ -1,6 +1,6 @@
 """Poder Carga de Cavalaria"""
 from src.powers.base import BasePower
-from src.powers.combat_power import Ginete
+from src.powers.combat_power.ginete import Ginete
 
 
 class CargaCavalaria(BasePower):
